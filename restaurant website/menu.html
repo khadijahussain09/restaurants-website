@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu | Olive & Amber</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="scriptsheet" href="menu.js">
+</head>
+<body>
+
+<nav class="site-navbar">
+  <a class="logo" href="index.html">Olive <span>&</span> Amber</a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="menu.html">Menu</a></li>
+    <li><a href="reservation.html">Reservation</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="menu-hero">
+  <p class="eyebrow">MADE FRESH, SERVED WITH LOVE</p>
+  <h1>Our <span>Menu</span></h1>
+  <p>Discover your next favourite dish.</p>
+</header>
+
+<section class="menu-controls">
+  <div class="category-links">
+    <a href="#breakfast">Breakfast</a>
+    <a href="#lunch">Lunch</a>
+    <a href="#dinner">Dinner</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#drinks">Drinks</a>
+  </div>
+  <div class="cart-summary">
+    <span>YOUR CART</span>
+    <strong>🛒 <span id="cart-count">0</span> items</strong>
+    <button onclick="showCart()" class="cart-button">View Cart</button>
+  </div>
+</section>
+
+<main class="menu-content">
+
+  <section class="menu-category" id="breakfast">
+    <div class="category-heading">
+      <p class="eyebrow">START YOUR DAY</p>
+      <h2>Breakfast</h2>
+    </div>
+    <div class="food-grid">
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=700" alt="Pancakes">
+        <div class="food-info">
+          <h3>Classic Pancakes</h3>
+          <p>Fluffy pancakes with fresh fruits and syrup.</p>
+          <div class="food-bottom"><strong>Rs. 850</strong><button onclick="addToCart('Classic Pancakes',850)">Add to Cart +</button></div>
+        </div>
+      </article>
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=700" alt="Breakfast toast">
+        <div class="food-info">
+          <h3>Morning Toast</h3>
+          <p>Golden toast with a delicious breakfast topping.</p>
+          <div class="food-bottom"><strong>Rs. 650</strong><button onclick="addToCart('Morning Toast',650)">Add to Cart +</button></div>
+        </div>
+      </article>
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=700" alt="Breakfast platter">
+        <div class="food-info">
+          <h3>Amber Breakfast</h3>
+          <p>A hearty breakfast platter to start your day.</p>
+          <div class="food-bottom"><strong>Rs. 1,100</strong><button onclick="addToCart('Amber Breakfast',1100)">Add to Cart +</button></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="menu-category" id="lunch">
+    <div class="category-heading">
+      <p class="eyebrow">A MIDDAY FAVOURITE</p>
+      <h2>Lunch</h2>
+    </div>
+    <div class="food-grid">
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=700" alt="Fresh salad">
+        <div class="food-info">
+          <h3>Garden Fresh Salad</h3>
+          <p>A fresh bowl of greens and seasonal ingredients.</p>
+          <div class="food-bottom"><strong>Rs. 950</strong><button onclick="addToCart('Garden Fresh Salad',950)">Add to Cart +</button></div>
+        </div>
+      </article>
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=700" alt="Pasta">
+        <div class="food-info">
+          <h3>Creamy Pasta</h3>
+          <p>Creamy, comforting pasta with herbs.</p>
+          <div class="food-bottom"><strong>Rs. 1,250</strong><button onclick="addToCart('Creamy Pasta',1250)">Add to Cart +</button></div>
+        </div>
+      </article>
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=700" alt="Pizza">
+        <div class="food-info">
+          <h3>Olive Special Pizza</h3>
+          <p>A delicious pizza topped with fresh ingredients.</p>
+          <div class="food-bottom"><strong>Rs. 1,500</strong><button onclick="addToCart('Olive Special Pizza',1500)">Add to Cart +</button></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="menu-category" id="dinner">
+    <div class="category-heading">
+      <p class="eyebrow">END YOUR DAY DELICIOUSLY</p>
+      <h2>Dinner</h2>
+    </div>
+    <div class="food-grid">
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700" alt="Grilled meal">
+        <div class="food-info">
+          <h3>Herb Grilled Plate</h3>
+          <p>A flavourful grilled dish with a side serving.</p>
+          <div class="food-bottom"><strong>Rs. 1,650</strong><button onclick="addToCart('Herb Grilled Plate',1650)">Add to Cart +</button></div>
+        </div>
+      </article>
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=700" alt="Burger">
+        <div class="food-info">
+          <h3>Amber Classic Burger</h3>
+          <p>A satisfying burger with our signature flavours.</p>
+          <div class="food-bottom"><strong>Rs. 1,100</strong><button onclick="addToCart('Amber Classic Burger',1100)">Add to Cart +</button></div>
+        </div>
+      </article>
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700" alt="Cheese pizza">
+        <div class="food-info">
+          <h3>Cheese Lovers Pizza</h3>
+          <p>A cheesy favourite for a cosy dinner.</p>
+          <div class="food-bottom"><strong>Rs. 1,450</strong><button onclick="addToCart('Cheese Lovers Pizza',1450)">Add to Cart +</button></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="menu-category" id="desserts">
+    <div class="category-heading">
+      <p class="eyebrow">SOMETHING SWEET</p>
+      <h2>Desserts</h2>
+    </div>
+    <div class="food-grid">
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700" alt="Chocolate cake">
+        <div class="food-info">
+          <h3>Chocolate Cake</h3>
+          <p>A rich and soft chocolate treat.</p>
+          <div class="food-bottom"><strong>Rs. 700</strong><button onclick="addToCart('Chocolate Cake',700)">Add to Cart +</button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=700" alt="Dessert bowl">
+        <div class="food-info">
+          <h3>Berry Dessert Bowl</h3>
+          <p>A sweet and refreshing dessert.</p>
+          <div class="food-bottom"><strong>Rs. 650</strong><button onclick="addToCart('Berry Dessert Bowl',650)">Add to Cart +</button></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="menu-category" id="drinks">
+    <div class="category-heading">
+      <p class="eyebrow">A REFRESHING SIP</p>
+      <h2>Drinks</h2>
+    </div>
+    <div class="food-grid">
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd4?w=700" alt="Refreshing drink">
+        <div class="food-info">
+          <h3>Fresh Lemonade</h3>
+          <p>A refreshing citrus drink.</p>
+          <div class="food-bottom"><strong>Rs. 350</strong><button onclick="addToCart('Fresh Lemonade',350)">Add to Cart +</button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700" alt="Iced coffee">
+        <div class="food-info">
+          <h3>Iced Coffee</h3>
+          <p>Chilled coffee for a little pick-me-up.</p>
+          <div class="food-bottom"><strong>Rs. 500</strong><button onclick="addToCart('Iced Coffee',500)">Add to Cart +</button></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<section class="delivery-banner">
+  <div>
+    <p class="eyebrow">ENJOY OLIVE & AMBER AT HOME</p>
+    <h2>Good food, delivered to your door.</h2>
+    <p>Add your favourites to the cart and try our demo checkout.</p>
+  </div>
+  <button class="btn btn-gold" onclick="showCart()">Go to My Cart</button>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="logo footer-logo" href="index.html">Olive <span>&</span> Amber</a>
+      <p>Good food, warm moments and beautiful memories.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Our Menu</a>
+      <a href="reservation.html">Reservations</a>
+      <a href="about.html">Our Story</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Karachi, Pakistan</p>
+      <p>hello@oliveandamber.example</p>
+      <p>+92 300 1234567</p>
+    </div>
+    <div>
+      <h3>Delivery</h3>
+      <p>Order your favourites from our menu.</p>
+      <p>Delivery checkout is a website demo.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Olive & Amber. All rights reserved.</div>
+</footer>
+
+<script src="menu.js"></script>
+</body>
+</html>

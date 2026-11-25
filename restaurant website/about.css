@@ -1,0 +1,332 @@
+/* =================================
+   OLIVE & AMBER - ABOUT PAGE
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #F5F0E6;
+    color: #303C2E;
+}
+
+
+/* =================
+   NAVBAR
+================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+
+    background: linear-gradient(
+        120deg,
+        #263326,
+        #40543D
+    );
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+.navbar h2 {
+    color: #E5D6B9;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar ul a:hover,
+.navbar ul a.active {
+    color: #D6B878;
+}
+
+
+/* =================
+   ABOUT SECTION
+================= */
+
+.about-section {
+    max-width: 1200px;
+    margin: 85px auto;
+
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+
+/* LEFT IMAGE */
+
+.about-image {
+    flex: 1;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    height: 570px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 15px 35px rgba(38,51,38,0.18);
+
+    transition: 0.4s;
+}
+
+.about-image img:hover {
+    transform: translateY(-5px);
+}
+
+
+/* RIGHT CONTENT */
+
+.about-content {
+    flex: 1;
+}
+
+.small-heading {
+    color: #A88A52;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.about-content h1 {
+    color: #293A2D;
+    font-size: 43px;
+    line-height: 1.3;
+    margin: 20px 0;
+}
+
+
+/* GOLDEN LINE */
+
+.gold-line {
+    width: 75px;
+    height: 3px;
+
+    background: linear-gradient(
+        to right,
+        #A88A52,
+        #E4C184
+    );
+
+    margin-bottom: 28px;
+}
+
+
+/* PARAGRAPHS */
+
+.about-content p {
+    color: #77776A;
+    font-size: 15px;
+    line-height: 2;
+
+    margin-bottom: 20px;
+}
+
+
+/* EXPLORE BUTTON */
+
+.about-btn {
+    display: inline-block;
+
+    margin-top: 12px;
+    padding: 16px 28px;
+
+    background: linear-gradient(
+        120deg,
+        #344635,
+        #52664B
+    );
+
+    color: #F8EBD1;
+
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: linear-gradient(
+        120deg,
+        #A88A52,
+        #C6A66B
+    );
+
+    color: #263729;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 18px rgba(168,138,82,0.25);
+}
+
+
+/* =================
+   FOOTER
+================= */
+
+.footer {
+    background: linear-gradient(
+        120deg,
+        #263326,
+        #40543D,
+        #293A2D
+    );
+
+    color: #F5F0E6;
+    padding: 65px 8% 25px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.3fr 1fr;
+    gap: 40px;
+    padding-bottom: 45px;
+}
+
+.footer-brand h2 {
+    color: #E4C184;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-brand p {
+    color: #E2E0D4;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.footer h3 {
+    color: #E5CB99;
+    font-size: 19px;
+    margin-bottom: 23px;
+}
+
+.footer-links a,
+.footer-social a {
+    display: block;
+    color: #E2E0D4;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #E4C184;
+    padding-left: 6px;
+}
+
+.footer-contact p {
+    color: #E2E0D4;
+    font-size: 14px;
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(228,193,132,0.35);
+
+    padding-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-bottom p {
+    color: #E5D6B9;
+    font-size: 13px;
+}
+
+.footer-bottom span {
+    color: #D6B477;
+    font-size: 13px;
+}
+
+
+/* =================
+   RESPONSIVE DESIGN
+================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        margin: 45px auto;
+        gap: 35px;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image img {
+        height: 380px;
+    }
+
+    .about-content h1 {
+        font-size: 34px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+}

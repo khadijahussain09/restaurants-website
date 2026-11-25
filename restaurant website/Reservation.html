@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | Olive & Amber</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="site-navbar">
+        <h2>Olive & Amber</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html" class="active">Reservation</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- PAGE HEADING -->
+    <section class="reservation-heading">
+        <p>AN EXPERIENCE TO REMEMBER</p>
+        <h1>Reserve Your Table</h1>
+        <span>Make your moments special with an unforgettable dining experience.</span>
+    </section>
+
+
+    <!-- MAIN RESERVATION AREA -->
+    <main class="reservation-container">
+
+        <!-- LEFT IMAGE CARD -->
+        <section class="reservation-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000"
+                alt="Elegant restaurant interior">
+
+            <div class="image-overlay">
+                <span>WELCOME TO</span>
+                <h2>Olive & Amber</h2>
+                <div class="gold-divider"></div>
+
+                <p>
+                    A beautiful table, delicious food and wonderful
+                    company. Let us make your dining experience special.
+                </p>
+
+                <h3>Dining Hours</h3>
+                <p>Monday – Sunday</p>
+                <p>12:00 PM – 11:00 PM</p>
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT FORM CARD -->
+        <section class="reservation-form-card">
+
+            <div class="form-heading">
+                <span>YOUR TABLE AWAITS</span>
+                <h2>Book a Table</h2>
+                <p>Please share your details below.</p>
+            </div>
+
+            <form action="#" method="get">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name"
+                        placeholder="Your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                        placeholder="Your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone"
+                        placeholder="+92 300 1234567" required>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <select id="time" required>
+                            <option value="">Choose time</option>
+                            <option>12:00 PM</option>
+                            <option>01:00 PM</option>
+                            <option>02:00 PM</option>
+                            <option>03:00 PM</option>
+                            <option>04:00 PM</option>
+                            <option>05:00 PM</option>
+                            <option>06:00 PM</option>
+                            <option>07:00 PM</option>
+                            <option>08:00 PM</option>
+                            <option>09:00 PM</option>
+                            <option>10:00 PM</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="guests">Guests</label>
+                        <select id="guests" required>
+                            <option value="">Select guests</option>
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5 Guests</option>
+                            <option>6 Guests</option>
+                            <option>7 Guests</option>
+                            <option>8 Guests</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occasion">Occasion</label>
+                        <select id="occasion">
+                            <option value="">Choose occasion</option>
+                            <option>Birthday</option>
+                            <option>Anniversary</option>
+                            <option>Family Dinner</option>
+                            <option>Business Meeting</option>
+                            <option>Casual Dining</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Special Requests</label>
+                    <textarea id="message" rows="3"
+                        placeholder="Write your requests here..."></textarea>
+                </div>
+
+                <button type="submit">RESERVE MY TABLE</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>Olive & Amber</h2>
+                <p>Good Food. Beautiful Moments.<br>
+                Unforgettable Memories.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Our Menu</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Get In Touch</h3>
+                <p>hello@oliveandamber.example</p>
+                <p>+92 300 1234567</p>
+                <p>Karachi, Pakistan</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="https://instagram.com/">Instagram</a>
+                <a href="https://facebook.com/">Facebook</a>
+                <a href="https://pinterest.com/">Pinterest</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Olive & Amber. All Rights Reserved.</p>
+            <span>Made with love & elegance.</span>
+        </div>
+
+    </footer>
+
+</body>
+</html>
